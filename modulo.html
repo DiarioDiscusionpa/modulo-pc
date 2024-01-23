@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de PCs</title>
+</head>
+<body>
+
+    <h1>Modulo Pc</h1>
+
+    <div>
+        <h2>Crear PC</h2>
+        <form action="crear_pc.php" method="post">
+            
+            <pre>
+            <label for="modelo">Modelo:</label>
+            <input type="text" id="modelo" name="modelo" required>
+
+            <label for="IdPc">IdPc:</label>
+            <input type="text" id="IdPc" name="IdPc" required>
+
+            <label for="descripcion">descripcion:</label>
+            <input type="text" id="descripcion" name="descripcion" required>
+
+            <hr>
+
+            <label for="procesador">Procesador:</label>
+            <input type="text" id="procesador" name="procesador" required>
+
+            <label for="RAM">RAM:</label>
+            <input type="text" id="RAM" name="RAM" required>
+
+            <label for="tipo RAM">tipo RAM:</label>
+            <input type="text" id="tipo RAM" name="tipo RAM" required>
+
+            <hr>
+            
+            <label for="grafica">grafica:</label>
+            <input type="text" id="grafica" name="grafica" required>
+
+            <label for="placa base">placa base:</label>
+            <input type="text" id="placa base" name="placa base" required>
+
+            <label for="adaptador red">adaptador red:</label>
+            <input type="text" id="adaptador red" name="adaptador red" required>
+
+            <hr>
+
+            <label for="fuente de poder">fuente de poder:</label>
+            <input type="text" id="fuente de poder" name="fuente de poder" required>
+
+            <label for="monitor">monitor:</label>
+            <input type="text" id="monitor" name="monitor" required>
+
+            <label for="teclado">teclado:</label>
+            <input type="text" id="teclado" name="teclado" required>
+
+            <hr>
+
+            <label for="estado">estado:</label>
+            <input type="text" id="estado" name="estado" required> 
+
+            <label for="mouse">mouse:</label>
+            <input type="text" id="mouse" name="mouse" required> </pre>
+
+            <button type="submit">Crear PC</button>
+        </form>
+    </div>
+
+    <div>
+        <h2>Listar PCs</h2>
+        
+    </div>
+
+    <div>
+        <h2>Eliminar PC</h2>
+        <form action="eliminar_pc.php" method="post">
+           
+            <label for="id_pc">ID de PC a eliminar:</label>
+            <input type="text" id="id_pc" name="id_pc" required>
+
+            <button type="submit">Eliminar PC</button>
+        </form>
+    </div>
+
+    <div>
+        <h2>Editar PC</h2>
+        <form action="editar_pc.php" method="post">
+            
+            <label for="id_pc_editar">ID de PC a editar:</label>
+            <input type="text" id="id_pc_editar" name="id_pc_editar" required>
+
+            
+
+            <button type="submit">Editar PC</button>
+
+
+            <h1></h1>
+        </form>
+    </div>
+
+</body>
+</html>
